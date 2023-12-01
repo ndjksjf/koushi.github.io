@@ -103,13 +103,13 @@ header section {
 }
 
 .advantage {
-	padding: 80px;
+	padding: 80px 160px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .advantage div {
-	width: 170px;
+	width: 172px;
 }
 
 .advantage div p {
@@ -130,10 +130,6 @@ header section {
 	margin-bottom: 50px;
 }
 
-.content div span {
-	font-weight: bold;
-}
-
 .content h2 {
 	font-family: Courier New;
 	font-size: 24px;
@@ -145,7 +141,69 @@ header section {
 	margin-top: 37px;
 }
 
-.content ul li {
+content li span {
+	font-weight: bold;
+}
+
+.content li {
 	margin-top: 25px;
 	margin-left: 30px;
+	position:relative;
+}
+
+.content li:before {
+	content: " ";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #FFCB06;
+	left: -30px;
+	top: 5px;
+	border-radius: 50%;
+}
+
+footer {
+	padding: 60px 160px 80px 160px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div {
+	width: 180px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	display: flex;
+	align-items: center;
+}
+
+.footer-logo span {
+	margin-left: 15px;
+	color: #D4D4D4;
+}
+
+footer p {
+	color: #555555;
+}
+
+footer div h2 {
+	color: #D4D4D4;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 0;
+	border-bottom: 1px solid #555555;
+}
+
+footer div ul li {
+	margin-top: 20px;
+}
+
+footer  div ul li a {
+	text-decoration: none;
+	color: #888888;
 }
